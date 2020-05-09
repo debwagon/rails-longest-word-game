@@ -1,0 +1,18 @@
+<p>Word: <%= session[:word] %>
+<br>
+
+
+<% if session[:is_word] == false %>
+  <%= "This is not a valid word" %>
+<% else %>
+  Score: <%= session[:length] %>
+<% end %>
+
+</p>
+
+Thank you for playing, i have a session installed to know your score
+
+<%= link_to "New game", new_path %>
+
+<%= link_to "Gorilla", gorilla_path %>
+

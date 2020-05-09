@@ -1,0 +1,13 @@
+<p>Word: <%= @word %>
+<br>
+
+<% if @is_word == false %>
+  <%= "This is not a valid word" %>
+<% else %>
+  Score: <%= @length %>
+<% end %>
+
+</p>
+
+
+<%= link_to "Actual GET Score", score_path %>
